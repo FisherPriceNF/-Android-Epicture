@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pagegallery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:useDefaultMargins="true"
+    android:background="@color/background_all"
+    tools:context=".GalleryActivity"
+    >
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="80dp"
+                android:verticalSpacing="16dp"
+                android:horizontalSpacing="16dp"
+                android:padding="16dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:layout_below="@+id/toolbar" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:background="@drawable/roundedbouton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                />
+
+    <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:minHeight="?attr/actionBarSize"
+                android:background="#2196F3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+                <EditText
+                    android:id="@+id/editTextRecherche"
+                    android:layout_width="280dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Rechercher"
+                    android:textAllCaps="true"
+                    style="@style/AppTheme"
+                    android:selectAllOnFocus="false"
+                    android:hint="@string/rechercher" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/boutonrecherche"
+        android:background="@android:drawable/ic_menu_search"
+        android:layout_above="@+id/activity_gallery"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
