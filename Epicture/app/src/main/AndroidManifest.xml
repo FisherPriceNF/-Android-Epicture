@@ -22,9 +22,6 @@
         </activity>
         <activity android:name=".GalleryActivity" />
         <activity android:name=".SimplePhotoActivity" />
-        <activity
-            android:name=".ConnectActivity"
-            android:label="@string/title_activity_connect"></activity>
     </application>
 
 </manifest>
